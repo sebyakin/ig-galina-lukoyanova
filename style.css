@@ -1,0 +1,162 @@
+/* welcome to the style file of this project! */
+
+* {
+    transition: all ease .2s ;
+    position: absolute;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background: rgb(255,0,79);
+background: linear-gradient(90deg, rgb(255, 3, 150) 0%, rgba(148,9,162,1) 56%, rgba(0,212,255,1) 100%);
+}
+.ellipse{
+    width: 500px;
+    height: 630px;
+    background: rgb(255,0,86);
+    background: linear-gradient(90deg, rgba(255,0,86,1) 0%, rgba(172,0,45,1) 100%);
+    border-radius: 700px;
+    top:100px;
+    left:600px;
+    -webkit-box-shadow: 0px 34px 70px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 34px 70px 7px rgba(0,0,0,0.75);
+box-shadow: 0px 34px 70px 7px rgba(0,0,0,0.75);
+
+
+}
+
+.square{
+    width:350px;
+    height:350px;
+    background: rgb(148, 34, 255);
+    top:210px;
+    left:675px;
+    filter: blur(10px)
+
+}
+
+.frame{
+    width:360px;
+    height: 360px;
+    border: 5px solid rgb(146, 3, 51);
+    top: 200px;
+    left: 665px;
+}
+
+.square-two{
+    width:300px;
+    height:300px;
+    background: rgb(89, 202, 255);
+    top:235px;
+    left:700px;
+    
+
+}
+
+.circle-one{
+    width: 50px;
+    height: 50px;
+    background: rgb(95, 0, 139);
+    border-radius: 50px;
+    top:600px;
+    left:700px;
+    -webkit-box-shadow: 5px 5px 30px 2px rgba(102,0,102,1);
+-moz-box-shadow: 5px 5px 30px 2px rgba(102,0,102,1);
+box-shadow: 5px 5px 30px 2px rgba(102,0,102,1);
+animation: move-up-two 0.5s infinite alternate;
+}
+
+.circle-two{
+    width: 50px;
+    height: 50px;
+    background: rgb(95, 0, 139);
+    border-radius: 50px;
+    top:620px;
+    left:825px;
+    -webkit-box-shadow: 5px 5px 30px 2px rgba(102,0,102,1);
+-moz-box-shadow: 5px 5px 30px 2px rgba(102,0,102,1);
+box-shadow: 5px 5px 30px 2px rgba(102,0,102,1);
+animation: move-up 0.5s infinite alternate;
+}
+
+.circle-three{
+    width: 50px;
+    height: 50px;
+    background: rgb(95, 0, 139);
+    border-radius: 50px;
+    top:600px;
+    left:950px;
+    -webkit-box-shadow: 5px 5px 30px 2px rgba(102,0,102,1);
+-moz-box-shadow: 5px 5px 30px 2px rgba(102,0,102,1);
+box-shadow: 5px 5px 30px 2px rgba(102,0,102,1);
+animation: move-up-two 0.5s infinite alternate;
+}
+
+.frame-two{
+    width:250px;
+    height: 250px;
+    border: 5px solid rgb(255, 255, 255);
+    top: 255px;
+    left: 720px;
+    animation: shrink 1.5s infinite alternate;
+    filter: blur(2px);
+}
+
+.frame-three{
+    width:200px;
+    height: 200px;
+    border: 5px solid rgb(255, 255, 255);
+    top: 280px;
+    left: 745px;
+    filter: blur(2px);
+    animation: shrink 1.5s infinite alternate;
+}
+
+.frame-five{
+    width:350px;
+    height: 350px;
+    border: 5px solid rgb(255, 255, 255);
+    top: 205px;
+    left: 670px;
+    filter: blur(2px);
+    animation: shrink 1.5s infinite alternate;
+}
+
+.frame-four{
+    width:300px;
+    height: 300px;
+    border: 5px solid rgb(255, 255, 255);
+    top: 230px;
+    left: 695px;
+    filter: blur(2px);
+    animation: shrink 1.5s infinite alternate;
+}
+
+
+
+@keyframes move-up {
+    from {
+        top:620px ;
+    } to {
+        top: 630px;
+    
+    }
+} 
+
+@keyframes move-up-two {
+    from {
+        top:600px ;
+    } to {
+        top: 610px;
+    
+    }
+} 
+
+@keyframes shrink {
+    from {
+        transform: scale(0);
+    } to {
+        transform: scale(3);
+    }
+} 
